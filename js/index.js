@@ -22,9 +22,9 @@ const common = (function() {
           height: "100vh",
           transform: "scale(1)",
         })
-        // .to($(this).find(".bg"), {
-        //   transform: "scale(1)",
-        // }, "<")
+        .to($(this).find(".bg"), {
+          transform: "scale(1)",
+        }, "<")
         .to($(".txt-wrap .txt"), {
           color: "#000",
         }, "-=.3")
