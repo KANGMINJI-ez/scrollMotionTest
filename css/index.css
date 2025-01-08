@@ -36,18 +36,34 @@
   height: 100vh;
 }
 .scroll-content .scroll-img {
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  width: 100%;
+}
+.scroll-content .scroll-img.motion {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  z-index: 1;
   height: 0;
+  overflow: hidden;
+}
+.img-area {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 .scroll-content .scroll-img:nth-child(1) {
   height: 100%;
 }
 .scroll-content .scroll-img .bg {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   transform: scale(1.2);
 }
 .scroll-content .scroll-img .txt {
@@ -68,6 +84,10 @@
 }
 .scroll-content .scroll-img .bg3 {
   background: url("../images/bg3.jpg") no-repeat center / cover;
+}
+
+.scroll-content .scroll-img .bg4 {
+  background: url("../images/bg1.jpg") no-repeat center / cover;
 }
 
 .section2 {

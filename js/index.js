@@ -19,12 +19,12 @@ const common = (function() {
       $(".scroll-img.motion").each(function(index) {
         t1
         .to($(this), {
-          height: "100%",
+          height: "100vh",
           transform: "scale(1)",
         })
-        .to($(this).find(".bg"), {
-          transform: "scale(1)",
-        }, "<")
+        // .to($(this).find(".bg"), {
+        //   transform: "scale(1)",
+        // }, "<")
         .to($(".txt-wrap .txt"), {
           color: "#000",
         }, "-=.3")
